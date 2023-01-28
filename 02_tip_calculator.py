@@ -22,7 +22,7 @@ def get_tip() -> int:
         tip_str = input("What percentage tip would you like to give? 10, 12, or 15? ")
         if tip_str.isnumeric():
             tip_num = int(tip_str)
-            if tip_num in [10,12,15]:
+            if tip_num in [10, 12, 15]:
                 return tip_num
 
 
@@ -37,3 +37,4 @@ def run_tip_calculator():
 
 if __name__ == '__main__':
     run_tip_calculator()
+    
