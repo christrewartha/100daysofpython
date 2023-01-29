@@ -21,7 +21,7 @@ def output_band_name(band_name: str):
     print(f"Hmm, a good name for your band could be {band_name}")
 
 
-def run_band_name_generator():
+def execute():
     home_town = get_home_town()
     pet_name = get_pet_name()
     band_name = generate_band_name(home_town, pet_name)
@@ -29,4 +29,4 @@ def run_band_name_generator():
 
 
 if __name__ == '__main__':
-    run_band_name_generator()
+    execute()

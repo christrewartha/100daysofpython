@@ -26,7 +26,7 @@ def get_tip() -> int:
                 return tip_num
 
 
-def run_tip_calculator():
+def execute():
     print("Welcome to the tip calculator.")
     total_bill = get_total_bill()
     num_people = get_number_of_people()
@@ -36,5 +36,5 @@ def run_tip_calculator():
 
 
 if __name__ == '__main__':
-    run_tip_calculator()
+    execute()
     

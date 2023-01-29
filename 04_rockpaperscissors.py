@@ -60,7 +60,7 @@ def determine_winner(human, computer):
             print("Scissors on Scissors. It's a tie!")
 
 
-def play_game():
+def execute():
     accepted_input = ['0', '1', '2']
     choice = input("What do you choose? Press 0 for Rock, 1 for Paper, or 2 for Scissors.\n")
     if choice not in accepted_input:
@@ -81,4 +81,4 @@ def play_game():
 
 
 if __name__ == '__main__':
-    play_game()
+    execute()

@@ -30,7 +30,7 @@ blue_death = 'You are frozen to death by an unexpected change in the weather. Ga
 victory_description = 'The yellow door leads you to untold wealth. You are winning at life!'
 
 
-def play_game():
+def execute():
     print(treasure_art)
     print(game_description)
     command = input(crossroad_description)
@@ -55,4 +55,4 @@ def play_game():
 
 
 if __name__ == '__main__':
-    play_game()
+    execute()
