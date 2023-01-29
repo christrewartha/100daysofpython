@@ -1,13 +1,34 @@
 import random
-
+import time
 
 ROCK = 0
 PAPER = 1
 SCISSORS = 2
 
-rock_art = '''ROCK!!!'''
-paper_art = '''PAPER!!!'''
-scissors_art = '''SCISSORS!!!'''
+rock_art = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+paper_art = '''
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+'''
+scissors_art = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
 ascii_map = [rock_art, paper_art, scissors_art]
 
 
@@ -49,8 +70,12 @@ def play_game():
     player_choice = int(choice)
     draw_art(player_choice)
 
+    time.sleep(1)
+
     computer_choice = random.randint(0, 2)
     draw_art(computer_choice)
+
+    time.sleep(0.5)
 
     determine_winner(player_choice, computer_choice)
 
