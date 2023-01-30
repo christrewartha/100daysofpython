@@ -27,5 +27,6 @@ def execute():
           "&name=Maze&url=worlds%2Ftutorial_en%2Fmaze1.json")
     print(example_solution)
 
+
 if __name__ == '__main__':
     execute()
