@@ -47,7 +47,7 @@ def calculator():
         elif decision == 'n':
             operand_a = int(input("What's the first number? "))
         elif decision == 'x':
-            return
+            break
 
 
 def execute():
